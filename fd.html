@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mandii's FD</title>
+</head>
+
+<body>
+
+    <div class="allitems">
+        <h1>FD CALCULATOR</h1>
+
+        <input type="number" id="txt" placeholder="enter ur fd">
+        <div class="calc">
+
+            <button id="calci" onclick="calculate()">Calculate</button>
+
+
+        </div>
+
+        <div class="out">
+            <label id="op">Your FD is : </label>
+
+        </div>
+
+    </div>
+
+    <script>
+        function calculate() {
+            const months = Number(document.getElementById("txt").value);
+            let rate = 0;
+            if (months < 3) rate = 5.8;
+            else if (months >= 3 && months <= 6) rate = 6.5;
+            else if (months >= 7 && months <= 9) rate = 6.8;
+            else rate = 7;
+            let result = document.getElementById("op");
+            result.innerHTML = "Your FD is : " + rate + "%";
+
+
+
+        }
+    </script>
+
+
+
+    <style>
+        ::placeholder {
+            text-align: center;
+
+            font-size: 18px;
+        }
+
+        .out {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+            font-weight: 400px;
+
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400px;
+            align-items: center;
+        }
+
+        .allitems {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            padding: 3rem;
+            background-color: rgb(78, 204, 158);
+            align-items: center;
+        }
+
+        input {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            font-size: 28px;
+            font-weight: 300px;
+            border: none;
+            border-radius: 0.6rem;
+        }
+
+        button {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            padding: 0.8rem;
+            margin-bottom: 3rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 20px;
+            font-weight: 300px;
+        }
+
+        button:hover {
+            background-color: bisque;
+            transition: all 0.5s;
+        }
+    </style>
+</body>
+
+</html>

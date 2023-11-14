@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mandii's celsius converter</title>
+</head>
+
+<body>
+
+    <style>
+        .allitems {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: aquamarine;
+            padding: 2rem 0;
+        }
+
+        button {
+            font-size: 1rem;
+            background-color: aliceblue;
+            border-color: black;
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        button:hover {
+            background-color: bisque;
+        }
+
+        input {
+            font-size: 1.5rem;
+            width: 200px;
+            height: 40px;
+            border-radius: 5px;
+
+        }
+
+        label {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            font-size: 30px;
+        }
+    </style>
+
+    <div class="allitems">
+
+        <h1>Celsius to Fahrenheit Convert</h1>
+        <br>
+        <input type="number" id="celsius" placeholder="Enter Celsius °C">
+        <br><br>
+        <button onclick="convertion()">Convert</button>
+        <br><br>
+        <label id="op">Your Fahrenheit Is : </label>
+
+    </div>
+
+    <script>
+        function convertion() {
+            let celsius = Number(document.getElementById("celsius").value);
+            let formula = celsius * (9 / 5) + 32;
+
+            document.getElementById("op").innerHTML = "Your Fahrenheit Is :" + formula + "°F";
+        }
+    </script>
+
+</body>
+
+</html>

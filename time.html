@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mandii's Time Difference</title>
+</head>
+
+<body>
+    <script>
+        function calculate() {
+            const time1 = document.getElementById("time1").value;
+            const time2 = document.getElementById("time2").value;
+
+            if (time1 && time2) {
+                const date1 = new Date(`2000-01-01T${time1}`);
+                const date2 = new Date(`2000-01-01T${time2}`);
+
+                const timeDiff = Math.abs(date1 - date2);
+
+                const hours = Math.floor(timeDiff / 3600000);
+                const minutes = Math.floor((timeDiff % 3600000) / 60000);
+
+                document.getElementById("op").innerHTML = `Your Time Difference Is ➙  ${hours} hours and ${minutes} minutes`;
+            } else {
+                document.getElementById("op").innerHTML = "Please enter both times.";
+            }
+        }
+    </script>
+    <div class="mela">
+        <div class="allitems">
+            <h1>Time Difference</h1>
+            <br><br>
+            <label for="1">Time1 ➙ </label>
+            <input type="time" id="time1">
+            <br><br>
+            <label for="2">Time2 ➙</label>
+            <input type="time" id="time2"><br><br><br><br>
+
+            <button onclick="calculate()">Calculate</button>
+            <br><br>
+            <label id="op">Your Time Difference Is ➙ </label>
+        </div>
+    </div>
+
+    <style>
+        label {
+            font-size: 29px;
+            font-weight: 200px;
+
+
+        }
+
+        input {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+
+        }
+
+        .allitems {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            padding: 3rem;
+            background-color: rgb(78, 204, 158);
+
+            align-items: center;
+        }
+
+        .mela {
+            border-radius: 5px;
+            /* margin: 20vh auto 0 auto;*/
+        }
+
+        button {
+
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            padding: 0.8rem;
+            margin-bottom: 3rem;
+            border: none;
+            border-radius: 1rem;
+            font-size: 20px;
+            font-weight: 300px;
+        }
+
+        button:hover {
+            background-color: bisque;
+            transition: all 0.5s;
+        }
+    </style>
+</body>
+
+</html>

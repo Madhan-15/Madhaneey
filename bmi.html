@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mandii's BMI calci</title>
+</head>
+
+<body>
+
+
+    <script>
+        function calculator() {
+            let weight = Number(document.getElementById("weight").value);
+            let height = Number(document.getElementById("height").value);
+
+            let BMI = weight / (height * height);
+            document.getElementById("op").innerHTML = "Your BMI IS :" + BMI;
+        }
+    </script>
+
+
+    <div class="allitems">
+        <h1>Body Mass Index CALCULATOR</h1>
+
+        <div class="box1">
+            <label>Weight ➙</label>
+            <input id="weight" type=" number">
+        </div>
+
+        <div class="box2">
+            <label>Height ➙</label>
+            <input id="height" type="number">
+        </div>
+        <button onclick="calculator()">Calculate</button> <br><br><br>
+
+        <label id="op">Your BMI IS :</label>
+
+    </div>
+
+
+
+
+    <style>
+        .allitems {
+            font-size: 27px;
+            font-weight: 300px;
+            font-family: 'Gill Sans', 'Gill Sans MT',
+                Calibri, 'Trebuchet MS', sans-serif;
+
+            padding: 2rem 0;
+            text-align: center;
+            background-color: rgb(78, 204, 158);
+        }
+
+        input {
+            text-align: center;
+            width: 180px;
+            height: 50px;
+            font-size: 20px;
+            border-style: double;
+
+            border-radius: 2px;
+
+
+        }
+
+        .box1 {
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+
+        .box2 {
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+
+        button {
+            margin-top: 1.7rem;
+            align-items: end;
+            width: 120px;
+            height: 30px;
+            font-size: 1.3rem;
+            border-radius: 2rem;
+            border-color: rgb(229, 175, 175)0, 0, 0, 0.178;
+        }
+
+
+        button:hover {
+            background-color: antiquewhite;
+            transition: all 0.6s;
+        }
+    </style>
+
+
+
+</body>
+
+</html>
