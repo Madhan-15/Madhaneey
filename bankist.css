@@ -1,0 +1,189 @@
+ body {
+     color: white;
+     background-image: url(money\ bg.jpeg);
+ }
+
+
+ .ullapo {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2rem;
+     margin-top: 4rem;
+ }
+
+ .welcome {
+     text-shadow: 0 0 20px #00fffb, 0 0 40px #0081bc;
+ }
+
+ .image {
+     width: 20%;
+     Height: 20%;
+ }
+
+ input {
+
+     border-color: bisque;
+     border-radius: 1.4rem;
+     padding: 0.5rem 5rem;
+     width: 4rem;
+     text-align: center;
+     font-size: 1rem;
+     transition: all 0.3s;
+ }
+
+ form {}
+
+ .loginb {
+
+     border: none;
+     background: none;
+     font-size: 2.2rem;
+     color: red;
+     cursor: Progress;
+     transition: all 0.3s;
+ }
+
+ .currentb {
+     /* margin-left: 4em;
+     margin-right: 4rem;*/
+     font-size: 1.4rem;
+     font-weight: 500;
+     margin-bottom: 2rem;
+
+     margin-left: 3rem;
+     margin-right: 3rem;
+
+
+     justify-content: space-between;
+     align-items: flex-end;
+     display: flex;
+
+     border-radius: 4rem;
+     padding: 1rem 1rem;
+     background-color: white;
+     color: black;
+ }
+
+ .cb {
+     margin-left: 10rem;
+ }
+
+ .bdate {
+     font-size: 1rem;
+     margin-left: 10rem;
+ }
+
+ .bl {
+     justify-content: space-between;
+     margin-right: 10rem;
+     font-weight: 500;
+     font-size: 2.2rem;
+ }
+
+ /*.movements {
+     margin-left: 4rem;
+ }*/
+
+ .box {
+     font-size: 2rem;
+
+ }
+
+ .tm {
+     text-align: center;
+ }
+
+ .transfer {
+     border-radius: 4rem;
+     padding: 1rem 1rem;
+     color: #333;
+     background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+     margin-left: 3rem;
+     margin-right: 3rem;
+ }
+
+ .tform {
+     border-color: black;
+     text-align: center;
+
+ }
+
+ input {
+     border-color: black;
+ }
+
+ .tbtn {
+
+     border: none;
+     background: none;
+     margin-left: auto;
+     border-radius: 0.7rem;
+     cursor: pointer;
+     font-size: 1.3rem;
+     background-color: white;
+     font-size: 2rem;
+     width: 4rem;
+     height: 2.6rem;
+     outline: none;
+
+ }
+
+ button {
+     border: navajowhite;
+ }
+
+ .deposiit {
+     text-align: center;
+     margin-top: 2rem;
+     border-radius: 4rem;
+     padding: 1rem 1rem;
+     color: #333;
+     background-image: linear-gradient(to top left, #39b385, #9be15d);
+
+     margin-left: 3rem;
+     margin-right: 3rem;
+ }
+
+ .dbtn {
+
+     border: none;
+
+     margin-left: auto;
+     border-radius: 0.7rem;
+     cursor: pointer;
+     background-color: white;
+     font-size: 2rem;
+     width: 4rem;
+     height: 2.6rem;
+ }
+
+ .logout {
+     background-image:
+         linear-gradient(to top left, #e52a5a, #ff585f);
+
+     text-align: center;
+     margin-top: 2rem;
+     border-radius: 5rem;
+     height: 3rem;
+ }
+
+ .out {
+
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+         'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     color: white;
+     font-size: 1.7rem;
+     background: none;
+     text-align: center;
+     cursor: Progress;
+
+ }
+
+ .tymr {
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+         'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+     font-size: 2rem;
+     text-align: center;
+ }
