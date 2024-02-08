@@ -1,0 +1,301 @@
+* {
+    font-family: fantasy;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: bolder;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fcf1db;
+}
+
+
+body {
+    padding-top: 10px;
+}
+
+.title {
+    /* padding: 100px; */
+    margin-top: 10em;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sub {
+    text-align: center;
+}
+
+.container {
+    padding-top: 5px;
+    margin-left: 10rem;
+}
+
+.hep {
+    text-align: center;
+}
+
+.cup {
+    border-radius: 50rem;
+    padding: 2rem;
+    width: 150px;
+    height: 150px;
+}
+
+.cup:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+
+    transition: 0.6s ease;
+
+}
+
+.logo {
+
+    float: left;
+    margin-left: 7em;
+    margin-top: 1em;
+
+    height: 9rem;
+}
+
+nav {
+
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 10000px;
+    margin: auto;
+    /* padding: 1.4rem 1rem; */
+
+    align-items: center;
+    gap: 4.8rem;
+
+}
+
+ul {
+
+    margin-left: 2em;
+    margin-top: 5em;
+
+    list-style-type: none;
+
+    background-color: transparent;
+    overflow: hidden;
+
+}
+
+li {
+    padding: 0rem 1.1rem;
+    float: left;
+}
+
+li a {
+    color: #e96d3f;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+
+
+}
+
+
+ul li a::before {
+
+    position: fixed;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+}
+
+li .active,
+li a:hover {
+    color: #060606;
+    transition: all 1s;
+}
+
+h1 {
+    text-align: center;
+}
+
+.hea {
+
+    margin-left: 8rem;
+}
+
+.cake {
+    overflow: hidden;
+}
+
+
+
+.ch {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    letter-spacing: 0.75px;
+}
+
+.blackforest {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+}
+
+.cakepic {
+    margin-top: 1rem;
+    display: flex;
+    grid-template-columns: repeat(3, 3fr);
+}
+
+.fig {
+    overflow: hidden;
+}
+
+.fig img {
+    border-radius: 50rem;
+    padding: 2rem;
+    width: 200px;
+    height: 200px;
+    /* border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    padding: 1rem; */
+}
+
+.fig img:hover {
+    overflow: hidden;
+
+    transform: scale(1.1);
+
+    transition: 0.6s ease;
+}
+
+.cake {
+    background-color: #fcf1db;
+}
+
+.sn img {
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+}
+
+.sn img:hover {
+    overflow: hidden;
+
+    translate: 2rem;
+    /* transform: scale(1.1) rotate(7deg); */
+    transition: 0.6s ease;
+}
+
+.t img {
+    /* animation-duration: 5s;
+    animation-name: come; */
+
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+}
+
+/* @keyframes come {
+    from {
+        margin-right: 0%;
+    }
+
+    to {
+        margin-right: 100%;
+    }
+} */
+
+.t img:hover {
+    overflow: hidden;
+    transform: scale(1.1) rotate(7deg);
+
+    transition: 0.6s ease;
+}
+
+.chai {
+    background-color: #fcf1db;
+}
+
+.m img {
+    /* border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    padding: 1rem; */
+
+    border-radius: 5rem;
+    padding: 2rem;
+    width: 20rem;
+    height: 20rem;
+}
+
+.m img:hover {
+    overflow: hidden;
+    transform: translate(5px, 12px);
+    transition: 0.7s ease;
+}
+
+.d img {
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+}
+
+.d img {
+    animation-duration: 5s;
+    animation-name: entry;
+    /* overflow: hidden; */
+    /* transform: ;
+    transition: 0.7s ease; */
+}
+
+@keyframes entry {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.call {
+    background-color: #fcf1db;
+}
+
+
+/* .ca .img {
+    border-radius: 2rem;
+    width: 80%;
+    height: 80%;
+    padding: 1rem;
+} */
+
+
+.d img:hover {
+    transform: scale(1.1);
+
+    transition: 0.6s ease;
+}
