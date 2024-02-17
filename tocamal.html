@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>U_CtoCC</title>
+  <style>
+    .click{
+    width: 7em;
+    height: 1.6em;
+    border-radius: 0.79em;
+   
+    font-size: large;
+    transition: background-color 500ms;
+    transition: color 500ms;
+}
+.click:hover{
+    background-color: black;
+    color: white;
+    transition: background-color 500ms;
+    transition: color 500ms;
+    border-color: white;
+    
+}
+textarea{
+  border-radius: 1em;
+  width: 200px;
+  height: 100px;
+  resize: none;
+  padding: .5em;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  align-items: center;
+  color: white;
+  gap: 2em;
+  background-color: rgb(72, 72, 72);
+}
+.output{
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <h2><sup>Underscore_case</sup> TO <sub>CamalCase</sub></h2>
+
+
+<script>
+   
+    const textArea = document.createElement('textarea');
+    const button =  document.createElement('button');
+    const outputDiv = document.createElement('div');
+
+    button.setAttribute('class','click');
+    button.setAttribute('onclick','convert()');
+    button.setAttribute('type','button')
+    button.textContent='Convert'
+
+    textArea.setAttribute('class', 'input');
+    textArea.setAttribute('placeholder','Enter Text to Camaled...');
+
+    outputDiv.setAttribute('class','output')
+    
+    document.body.appendChild(textArea);
+    document.body.appendChild(button);
+    document.body.appendChild(outputDiv)
+
+    function convert() {
+      const inputText = textArea.value;
+      const convertedText = inputText.replace(/_./g, match => match.charAt(1).toUpperCase());
+      outputDiv.textContent = convertedText;
+    }
+
+</script>
+
+</body>
+</html>
